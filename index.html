@@ -1,56 +1,514 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>elacerda website</title>
-		<meta charset="utf-8" />
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Lacerda · Conservation biogeography, remote sensing and open-source tools</title>
+  <meta name="description" content="Eduardo Ribeiro Lacerda is a postdoctoral researcher at the Conservation Biogeography Lab, Humboldt-Universität zu Berlin, working on land-use change, satellite time series and conservation and restoration planning, and the author of open-source geospatial tools.">
+  <meta name="author" content="Eduardo Ribeiro Lacerda">
+  <link rel="canonical" href="https://sacridini.github.io/">
 
-	<body bgcolor="#fff2cc">
-		<center>
-			<h1><code>Eduardo Ribeiro Lacerda</code></h1>
-			<p>Researcher @ International Institute for Sustainability</p>
-			<p>PhD Candidate @ Federal Fluminense University (UFF)</p>
-			<hr width="30%" size="1"> 
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Eduardo Lacerda">
+  <meta property="og:description" content="Postdoc at the Conservation Biogeography Lab, HU Berlin. Land-use change, satellite time series, conservation planning and open-source geospatial software.">
+  <meta property="og:url" content="https://sacridini.github.io/">
+  <meta property="og:image" content="https://sacridini.github.io/assets/img/eduardo.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@elacerdageo">
 
-			<h3><code><a href="./hp/projects.html">projects</a></code></h3>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Crect width='2' height='2' fill='%231e5236'/%3E%3Crect x='2' width='2' height='2' fill='%23487f4c'/%3E%3Crect y='2' width='2' height='2' fill='%23bea976'/%3E%3Crect x='2' y='2' width='2' height='2' fill='%234a80a0'/%3E%3C/svg%3E">
 
-			<hr width="30%" size="1"> 
-			<h3><code><a href="./hp/info.html">contact info</a></code></h3>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-			<h3><code><a 
-				target="_blank" rel="noopener noreferrer" 
-				href="https://github.com/sacridini">github</a></code></h3>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eduardo Ribeiro Lacerda",
+    "jobTitle": "Postdoctoral researcher",
+    "affiliation": { "@type": "Organization", "name": "Conservation Biogeography Lab, Humboldt-Universität zu Berlin" },
+    "alumniOf": ["Universidade Federal Fluminense", "Universidade Federal do Rio de Janeiro", "Universidade do Estado do Rio de Janeiro"],
+    "url": "https://sacridini.github.io/",
+    "sameAs": [
+      "https://github.com/sacridini",
+      "https://orcid.org/0000-0003-3803-5842",
+      "https://www.linkedin.com/in/eduardo-lacerda-827819ba",
+      "https://bsky.app/profile/geolacerda.bsky.social"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-			<h3><code><a 
-				target="_blank" rel="noopener noreferrer" 
-				href="http://lattes.cnpq.br/0392869318849187">lattes</a></code></h3>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="#top">Eduardo Lacerda</a>
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-			<h3><code><a 
-				target="_blank" rel="noopener noreferrer" 
-				href="https://www.researchgate.net/profile/Eduardo_Lacerda6">researchgate</a></code></h3>
+  <main id="main">
 
+    <!-- ============ hero ============ -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div>
+          <h1><span>Eduardo</span><span>Lacerda</span></h1>
+          <div class="who">
+            <img src="assets/img/eduardo.jpg" alt="Portrait of Eduardo Lacerda" width="68" height="68">
+            <p><strong>Postdoctoral researcher</strong><br>
+              <a href="https://biogeo.pages.cms.hu-berlin.de/website/">Conservation Biogeography Lab</a>,
+              Humboldt-Universität zu Berlin</p>
+          </div>
+          <p class="lede">I study how land use changes, using satellite time series,
+            landscape analysis and spatial optimization, and work out where
+            conservation and restoration do the most good. I also write the
+            open-source software that makes this work fast and reproducible.</p>
+          <ul class="links">
+            <li><a class="primary" href="#contact">Get in touch</a></li>
+            <li><a href="https://github.com/sacridini">GitHub</a></li>
+            <li><a href="https://orcid.org/0000-0003-3803-5842">ORCID</a></li>
+            <li><a href="https://www.linkedin.com/in/eduardo-lacerda-827819ba">LinkedIn</a></li>
+          </ul>
+        </div>
 
-		</center>
+        <figure class="scene">
+          <div class="scene-frame">
+            <canvas id="landscape" role="img"
+              aria-label="Animated map of a simulated forest landscape from 1985 to 2024: a deforestation front spreads out from roads, part of the cleared land regrows, and a protected area stays forested."></canvas>
+            <div class="probe" id="probe" aria-live="polite"></div>
+          </div>
+          <div class="timebar">
+            <output class="year" id="year-out" for="year-slider">1985</output>
+            <button class="play" id="play" type="button" aria-label="Play 1985 to 2024"></button>
+            <input type="range" id="year-slider" min="1985" max="2024" step="1" value="1985" aria-label="Year">
+          </div>
+          <figcaption>
+            <p>A simulated landscape, 1985–2024. Point at any pixel to see its NDVI series and when it changed.</p>
+            <span class="legend" aria-hidden="true">NDVI 0.1 <span class="ramp"></span> 0.9 <span class="sw"></span> water</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
 
-		<style>
-			a:link {
-			  color: black;
-			  background-color: transparent;
-			  text-decoration: none;
-			}
+    <!-- ============ about ============ -->
+    <section class="block" id="about" aria-labelledby="about-h">
+      <div class="wrap">
+        <div class="block-head">
+          <h2 id="about-h">About</h2>
+        </div>
 
-			a:visited {
-			  color: black;
-			  background-color: transparent;
-			  text-decoration: none;
-			}
+        <div class="about">
+          <div class="prose">
+            <p>I am a Brazilian geographer and data scientist, now a postdoc in
+              Tobias Kuemmerle’s Conservation Biogeography Lab at Humboldt-Universität
+              zu Berlin. My work sits where remote sensing, landscape ecology and
+              optimization meet: mapping how land changes over time, and using
+              those maps to decide where to protect and where to restore.</p>
+            <p>From 2018 to 2023 I coordinated data science at the International
+              Institute for Sustainability (IIS) in Rio de Janeiro. There I led the
+              team behind PLANGEA, the institute’s spatial planning platform, and
+              worked on the global and national restoration priorities published
+              in <em>Nature</em> and elsewhere, as well as on prioritization projects
+              for governments and companies.</p>
+            <p>Before that I spent years on monitoring and mapping: dense
+              Landsat and Sentinel time series and change detection during my PhD
+              at UFF, high-resolution mapping for Brazil’s Ministry of the
+              Environment, and large spatial databases at UFRJ. That is where the
+              software habit comes from: I have kept open-source projects on GitHub
+              since 2015, and today I write high-performance tools in Rust, C++ and
+              Python.</p>
+          </div>
+          <aside>
+            <h3>Research interests</h3>
+            <ul class="tags">
+              <li>Land-use change</li>
+              <li>Satellite time series</li>
+              <li>Change detection</li>
+              <li>Conservation planning</li>
+              <li>Ecosystem restoration</li>
+              <li>Spatial optimization</li>
+              <li>Landscape ecology</li>
+              <li>High-performance computing</li>
+            </ul>
+            <h3>Languages I code in</h3>
+            <ul class="tags">
+              <li>Rust</li><li>Python</li><li>C++</li><li>R</li><li>JavaScript</li>
+            </ul>
+          </aside>
+        </div>
 
-			a:hover {
-			  color: red;
-			  background-color: transparent;
-			  text-decoration: underline;
-			}
-		</style>
+        <div class="timeline-wrap">
+          <h3>Career</h3>
+          <div>
+            <ol class="timeline" reversed>
+              <li class="now">
+                <span class="when">2024–now</span>
+                <div class="what">
+                  <b>Postdoctoral researcher</b>
+                  <span>Conservation Biogeography Lab, Humboldt-Universität zu Berlin</span>
+                  <p>Land-use change and deforestation frontiers; teaching Conservation
+                    Biogeography and Geoprocessing with Python.</p>
+                </div>
+              </li>
+              <li>
+                <span class="when">2022–2023</span>
+                <div class="what">
+                  <b>Remote sensing specialist</b>
+                  <span>Embrapa, Rio de Janeiro</span>
+                  <p>Harmonized Landsat and Sentinel-2 time series, image fusion and
+                    change detection.</p>
+                </div>
+              </li>
+              <li>
+                <span class="when">2018–2023</span>
+                <div class="what">
+                  <b>Data Science Coordinator</b>
+                  <span>International Institute for Sustainability (IIS), Rio de Janeiro</span>
+                  <p>Led the computational modelling and data science team and the
+                    development of PLANGEA; spatial prioritization with linear and
+                    mixed-integer programming, machine learning and HPC.</p>
+                </div>
+              </li>
+              <li>
+                <span class="when">2016–2018</span>
+                <div class="what">
+                  <b>Spatial database analyst</b>
+                  <span>Fundo Verde, COPPE/UFRJ</span>
+                </div>
+              </li>
+              <li>
+                <span class="when">2014–2015</span>
+                <div class="what">
+                  <b>Climate Policy Initiative, then AMS Kepler</b>
+                  <span>Research assistant; GIS analyst for Ministry of Environment mapping (GEOBIA, RapidEye)</span>
+                </div>
+              </li>
+              <li>
+                <span class="when">2012–2018</span>
+                <div class="what">
+                  <b>Researcher</b>
+                  <span>ESPAÇO Remote Sensing Lab, IGEO/UFRJ</span>
+                  <p>Including the Olho no Verde vegetation monitoring project with INEA.</p>
+                </div>
+              </li>
+            </ol>
+            <ul class="edu" aria-label="Education">
+              <li><span class="when">2022</span><span>PhD in Geography, Universidade Federal Fluminense (UFF)</span></li>
+              <li><span class="when">2017</span><span>MSc in Geography, Universidade Federal do Rio de Janeiro (UFRJ)</span></li>
+              <li><span class="when">2013</span><span>BSc in Geography, Universidade do Estado do Rio de Janeiro (UERJ)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</body>
+    <!-- ============ software ============ -->
+    <section class="block" id="software" aria-labelledby="software-h">
+      <div class="wrap">
+        <div class="block-head">
+          <h2 id="software-h">Software</h2>
+          <p>Free and open-source tools for remote sensing and spatial ecology.
+            Each reimplements the reference methods of its field, is tested against
+            the original software, and runs from a laptop to a cluster.</p>
+        </div>
+
+        <div class="chain">
+          <h3 class="chain-label">Satellite time series</h3>
+          <article class="tool">
+            <div class="tool-top">
+              <img src="assets/img/zeit.png" alt="" width="36" height="36">
+              <div>
+                <h3><a href="https://github.com/sacridini/zeit-cdts">Zeit</a></h3>
+                <p class="kind">Python library with a Rust core</p>
+              </div>
+            </div>
+            <p>Change detection and time series analysis for Earth observation
+              data cubes, from STAC catalogs to maps of when, where and how much
+              the land changed.</p>
+            <ul class="facts">
+              <li>CCDC, S-CCD, LandTrendr, BFAST, BEAST, EWMACD, CODED, TWDTW</li>
+              <li>Phenology, unmixing, map validation, deep learning</li>
+              <li>Checked against the original R and author code</li>
+            </ul>
+            <pre class="code" aria-label="Example"><code><span class="k">import</span> zeit
+
+ndvi = zeit.load_raster(<span class="s">"ndvi_stack.tif"</span>)
+lt   = zeit.landtrendr(ndvi)    <span class="c"># or ccdc, bfast…</span>
+loss = zeit.extract_events(lt)  <span class="c"># loss per pixel</span>
+zeit.plot(ndvi, fit=lt)</code></pre>
+            <div class="foot">
+              <span class="install"><code>pip install zeit-cdts</code><button type="button" data-copy="pip install zeit-cdts">Copy</button></span>
+              <a href="https://sacridini.github.io/zeit-cdts/">Documentation</a>
+            </div>
+          </article>
+
+          <div class="link-arrow" aria-hidden="true">
+            <svg viewBox="0 0 100 14" preserveAspectRatio="none"><path d="M0 7 H94 M88 1 L96 7 L88 13" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+            <span>its change detection runs inside</span>
+          </div>
+
+          <article class="tool">
+            <div class="tool-top">
+              <img src="assets/img/janus.png" alt="" width="36" height="36">
+              <div>
+                <h3><a href="https://github.com/sacridini/janus">Janus</a></h3>
+                <p class="kind">Desktop app for Windows, macOS and Linux</p>
+              </div>
+            </div>
+            <img class="shot" src="assets/img/janus-shot.jpg" alt="Janus showing a map of an NDVI cube, the time series of a pixel and its statistics" loading="lazy" width="1400" height="748">
+            <p>Explore satellite imagery pixel by pixel, find where and when the land
+              changed, and measure how accurate your maps are. Opens local stacks,
+              cloud-optimized GeoTIFFs and STAC catalogs.</p>
+            <div class="foot">
+              <a href="https://sacridini.github.io/janus/">Website</a>
+              <a href="https://github.com/sacridini/janus/releases/latest">Download</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="chain">
+          <h3 class="chain-label">Landscape ecology and conservation planning</h3>
+          <article class="tool">
+            <div class="tool-top">
+              <img src="assets/img/landschaft.svg" alt="" width="36" height="36">
+              <div>
+                <h3><a href="https://github.com/sacridini/landschaft">landschaft</a></h3>
+                <p class="kind">Python library with a C++/OpenMP core</p>
+              </div>
+            </div>
+            <p>The methods of landscape ecology in one package: habitat patterns,
+              fragmentation, landscape metrics, connectivity and prioritization, from a
+              single raster to maps larger than memory.</p>
+            <ul class="facts">
+              <li>Reproduces GuidosToolbox, landscapemetrics, Conefor, Circuitscape, Zonation 5</li>
+              <li>From a few to several hundred times faster</li>
+            </ul>
+            <pre class="code" aria-label="Example"><code><span class="k">import</span> landschaft <span class="k">as</span> ls
+
+forest = ls.load_raster(<span class="s">"forest.tif"</span>)
+morph  = ls.mspa(forest, edge_width=<span class="n">2</span>)
+ls.write_raster(morph, <span class="s">"forest_mspa.tif"</span>)
+<span class="k">print</span>(ls.mspa_stats(morph))</code></pre>
+            <div class="foot">
+              <span class="install"><code>pip install landschaft</code><button type="button" data-copy="pip install landschaft">Copy</button></span>
+              <a href="https://sacridini.github.io/landschaft/">Documentation</a>
+            </div>
+          </article>
+
+          <div class="link-arrow" aria-hidden="true">
+            <svg viewBox="0 0 100 14" preserveAspectRatio="none"><path d="M6 7 H94 M88 1 L96 7 L88 13 M12 1 L4 7 L12 13" fill="none" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+            <span>tested against each other for the same results</span>
+          </div>
+
+          <article class="tool">
+            <div class="tool-top">
+              <img src="assets/img/terraflux.svg" alt="" width="36" height="36">
+              <div>
+                <h3><a href="https://github.com/sacridini/terraflux">Terraflux</a></h3>
+                <p class="kind">Desktop app and command line, written in Rust</p>
+              </div>
+            </div>
+            <img class="shot" src="assets/img/terraflux-shot.jpg" alt="The Terraflux model builder: a graph of operators above and the resulting forest fragmentation map below" loading="lazy" width="1400" height="875">
+            <p>Landscape ecology, conservation planning and land change simulation in
+              one visual model builder: more than 340 operators and 45 ready-to-run
+              templates, from a laptop to a Slurm cluster.</p>
+            <div class="foot">
+              <a href="https://sacridini.github.io/terraflux/">Website</a>
+              <a href="https://github.com/sacridini/terraflux">Source code</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="community">
+          <h3 class="chain-label">Community projects</h3>
+          <div class="big-repo">
+            <h3><a href="https://github.com/sacridini/Awesome-Geospatial">Awesome Geospatial</a></h3>
+            <p>A long, community-curated list of geospatial tools and resources:
+              libraries, remote sensing, spatial databases, deep learning and more,
+              across every major language.</p>
+            <dl class="stats">
+              <div><dt>stars on GitHub</dt><dd data-repo="Awesome-Geospatial" data-field="stargazers_count">5,365</dd></div>
+              <div><dt>forks</dt><dd data-repo="Awesome-Geospatial" data-field="forks_count">864</dd></div>
+            </dl>
+          </div>
+          <div class="big-repo small">
+            <h3><a href="https://github.com/sacridini/GEET">GEET</a></h3>
+            <p>Google Earth Engine Toolbox: a JavaScript library for writing small or
+              complex Earth Engine apps with a lot less code.</p>
+            <dl class="stats">
+              <div><dt>stars</dt><dd data-repo="GEET" data-field="stargazers_count">177</dd></div>
+              <div><dt>forks</dt><dd data-repo="GEET" data-field="forks_count">72</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <p class="more-code">More projects, from Earth Engine scripts to a satellite overpass planner, are on <a href="https://github.com/sacridini?tab=repositories">my GitHub</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ publications ============ -->
+    <section class="block" id="publications" aria-labelledby="pubs-h">
+      <div class="wrap">
+        <div class="block-head">
+          <h2 id="pubs-h">Selected publications</h2>
+          <p>Work on global and national restoration priorities, biodiversity
+            metrics, land-use change and remote sensing methods.</p>
+        </div>
+
+        <ol class="pubs">
+          <li>
+            <span class="yr">2026</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1002/rse2.70092">frontiermetrics: An R package for characterizing deforestation frontiers</a></p>
+              <p class="au">Huais, P.Y., Buchadas, A., <b>Lacerda, E.R.</b>, Nori, J., Baumann, M., Kuemmerle, T.</p>
+              <p class="src"><em>Remote Sensing in Ecology and Conservation</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1016/j.biocon.2025.110972">Addressing the urgent climate and biodiversity crisis through strategic ecosystem restoration in Brazil</a></p>
+              <p class="au">Liévano-Latorre, L.F., Almeida-Rocha, J.M., … <b>Lacerda, E.R.</b>, … (84 authors)</p>
+              <p class="src"><em>Biological Conservation</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1111/jbi.15090">Planning for the restoration of functional connectivity in Brazil</a></p>
+              <p class="au">Manes, S., Rocha, D.S.B., Oliveira, L.G.S., … <b>Lacerda, E.R.</b>, Latawiec, A.E., … (13 authors)</p>
+              <p class="src"><em>Journal of Biogeography</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2024</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1111/cobi.14426">Drivers of mangrove area change and suppression in Brazil from 2000 to 2020</a></p>
+              <p class="au">Vanin, G.T., <b>Lacerda, E.R.</b>, Mori, G.M.</p>
+              <p class="src"><em>Conservation Biology</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2022</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1016/j.rse.2022.113194">Sugarcane abandonment mapping in Rio de Janeiro state Brazil</a></p>
+              <p class="au">de Castro, P.I.B., Yin, H., Teixera Junior, P.D., <b>Lacerda, E.</b>, Pedroso, R., Lautenbach, S., Vicens, R.S.</p>
+              <p class="src"><em>Remote Sensing of Environment</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2021</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1038/s41559-021-01432-0">A metric for spatially explicit contributions to science-based species targets</a></p>
+              <p class="au">Mair, L., Bennun, L.A., Brooks, T.M., … <b>Lacerda, E.R.</b>, … (88 authors)</p>
+              <p class="src"><em>Nature Ecology &amp; Evolution</em> <span>The IUCN STAR metric</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2021</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.22409/geographia2021.v23i50.a46996">Detecção de áreas de florestas invariantes em séries temporais utilizando Random Forest</a></p>
+              <p class="au"><b>Lacerda, E.R.</b>, Vicens, R.S.</p>
+              <p class="src"><em>GEOgraphia</em></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2020</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1038/s41586-020-2784-9">Global priority areas for ecosystem restoration</a></p>
+              <p class="au">Strassburg, B.B.N., Iribarrem, A., Beyer, H.L., … <b>Lacerda, E.R.</b>, Latawiec, A.E., … Visconti, P. (27 authors)</p>
+              <p class="src"><em>Nature</em> 586, 724–729 <span>Cited more than 1,100 times</span></p>
+            </div>
+          </li>
+          <li>
+            <span class="yr">2020</span>
+            <div>
+              <p class="t"><a href="https://doi.org/10.1016/j.ecolecon.2020.106758">Costs and carbon benefits of mangrove conservation and restoration: a global analysis</a></p>
+              <p class="au">Jakovac, C.C., Latawiec, A.E., <b>Lacerda, E.</b>, Lucas, I.L., Koryś, K.A., Iribarrem, A., Malaguti, G.A., Turner, R.K., Luisetti, T., Strassburg, B.B.N.</p>
+              <p class="src"><em>Ecological Economics</em></p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="pubs-foot">
+          <p>More than 1,500 citations across about 25 publications (OpenAlex).</p>
+          <p>Full list on <a href="https://orcid.org/0000-0003-3803-5842">ORCID</a>,
+            <a href="https://www.semanticscholar.org/author/2077273406">Semantic Scholar</a> and
+            <a href="http://lattes.cnpq.br/0392869318849187">Lattes</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ teaching ============ -->
+    <section class="block" id="teaching" aria-labelledby="teach-h">
+      <div class="wrap">
+        <div class="block-head">
+          <h2 id="teach-h">Teaching</h2>
+          <p>Courses I teach at the Geography Department of Humboldt-Universität zu Berlin.</p>
+        </div>
+        <div class="courses">
+          <article class="course">
+            <h3>Conservation Biogeography</h3>
+            <p class="where">Humboldt-Universität zu Berlin</p>
+            <p>Where biodiversity is, how land-use change threatens it, and how
+              spatial data and planning tools help decide where to conserve and
+              restore.</p>
+          </article>
+          <article class="course">
+            <h3>Geoprocessing with Python</h3>
+            <p class="where">Humboldt-Universität zu Berlin</p>
+            <p>Processing raster and vector data in Python, from reading and
+              reprojecting to automating whole remote sensing and GIS workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ contact ============ -->
+    <section class="block" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact">
+        <div class="contact-head">
+          <h2 id="contact-h">Contact</h2>
+        </div>
+        <div>
+          <a class="mail" href="mailto:eduardo.ribeiro.lacerda@geo.hu-berlin.de">eduardo.ribeiro.lacerda@geo.hu-berlin.de</a>
+          <p class="addr">Conservation Biogeography Lab, Geography Department, Humboldt-Universität zu Berlin, Germany. Also at <a href="mailto:eduardolacerdageo@gmail.com">eduardolacerdageo@gmail.com</a>.</p>
+          <ul class="profiles">
+            <li><a href="https://github.com/sacridini">GitHub <span>sacridini</span></a></li>
+            <li><a href="https://orcid.org/0000-0003-3803-5842">ORCID <span>0000-0003-3803-5842</span></a></li>
+            <li><a href="https://www.linkedin.com/in/eduardo-lacerda-827819ba">LinkedIn <span>eduardo-lacerda</span></a></li>
+            <li><a href="https://bsky.app/profile/geolacerda.bsky.social">Bluesky <span>geolacerda</span></a></li>
+            <li><a href="https://x.com/elacerdageo">X <span>elacerdageo</span></a></li>
+            <li><a href="https://www.researchgate.net/profile/Eduardo_Lacerda6">ResearchGate <span>Eduardo_Lacerda6</span></a></li>
+            <li><a href="http://lattes.cnpq.br/0392869318849187">Lattes <span>CV in Portuguese</span></a></li>
+            <li><a href="https://biogeo.pages.cms.hu-berlin.de/website/author/eduardo-lacerda/">Lab profile <span>HU Berlin</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>© <span id="yr">2026</span> Eduardo Ribeiro Lacerda</p>
+      <p>Hand-written HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/landscape.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
